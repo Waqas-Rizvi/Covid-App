@@ -24,12 +24,3 @@ export {
     getData,
     getCities
 }
-
-// https://restcountries.eu/rest/v2/all
-
-// fetch('https://api.covidtracking.com/v1/states/current.json')
-//             .then(response => response.json())
-//             .then(json => dispatch({
-//                 type: "RESULT",
-//                 result: json
-//             }))

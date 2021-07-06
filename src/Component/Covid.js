@@ -8,21 +8,12 @@ export const Covid = () => {
     const [selectedObj, setSelectedObj] = useState({});
     let state = useSelector(state => state)
     let dispatch = useDispatch()
-    // const update = () => {
-    //     dispatch({
-    //         type: "DATA",
-    //         username: "Hamza"
-    //     })
-    // }
+   
     useEffect(() => {
         dispatch(getData())
         dispatch(getCities())
     }, [])
-
-
-    // useEffect(()=>{
-    //     dispatch(cities())
-    // }, [])
+   
     const onSelectChange = (e) => {
         console.log(e.target.value, state.result);
 
